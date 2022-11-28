@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Домашняя работа - Массивы");
 
-        System.out.println("Задание №1");
+        System.out.println("1 задача. Задание №1");
         // 1 задача
         //Объявите три массива:
         //1. Целочисленный массив, заполненный тремя цифрами – 1, 2 и 3 – с помощью ключевого слова new.
@@ -24,6 +24,7 @@ public class Main {
         for (int i=0;i<3;i++) {
             System.out.println(i+" значение массива, в котором хранится дробное число - "+chickenWeight[i]);
         }
+
         System.out.println(" ");
 
         System.out.println("Задание №3");
@@ -46,5 +47,17 @@ public class Main {
         double productWeight=product[3];
         System.out.println("Размеры изделия: ");
         System.out.println("длинна: "+productLong+" ширина: "+productWidth+" высота: "+productHeight+" вес: "+productWeight);
+        System.out.println(" ");
+
+        System.out.println("2 задача. Задание №1");
+        //2 задача
+        //Пройдите по каждому из трех массивов и распечатайте все элементы всех трех массивов, начиная с первого элемента,
+        //через запятую. Запятая между последним элементом одного массива и первым элементом следующего не нужна.
+        //см выше.
+        System.out.print(id[0]+","+id[1]+","+id[2]+"  "); // задача 2. задание №1
+        int y=0;
+        System.out.print(chickenWeight[y]+","+chickenWeight[y+=1]+","+chickenWeight[y+=1]+" "); // задача 2. задание №1
+        System.out.print(datyBirth[0]+","+datyBirth[1]+","+datyBirth[2]+" ");
+        System.out.print(productLong+","+productWidth+","+productHeight+","+productWeight);
         }
     }
