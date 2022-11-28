@@ -1,3 +1,4 @@
+import static com.sun.tools.doclint.Entity.forall;
 import static com.sun.tools.doclint.Entity.or;
 
 public class Main {
@@ -54,10 +55,14 @@ public class Main {
         //Пройдите по каждому из трех массивов и распечатайте все элементы всех трех массивов, начиная с первого элемента,
         //через запятую. Запятая между последним элементом одного массива и первым элементом следующего не нужна.
         //см выше.
-        System.out.print(id[0]+","+id[1]+","+id[2]+"  "); // задача 2. задание №1
+        System.out.print(id[0]+","+id[1]+","+id[2]+"  ");
+        //System.out.print(chickenWeight[y] + "," + chickenWeight[y += 1] + "," + chickenWeight[y += 1] + " ");
         int y=0;
-        System.out.print(chickenWeight[y]+","+chickenWeight[y+=1]+","+chickenWeight[y+=1]+" "); // задача 2. задание №1
-        System.out.print(datyBirth[0]+","+datyBirth[1]+","+datyBirth[2]+" ");
-        System.out.print(productLong+","+productWidth+","+productHeight+","+productWeight);
+        while (y<3) {
+            System.out.print(chickenWeight[y]+",");
+            y++;
         }
-    }
+            System.out.print(datyBirth[0] + "," + datyBirth[1] + "," + datyBirth[2] + " ");
+            System.out.print(productLong + "," + productWidth + "," + productHeight + "," + productWeight);
+        }
+}
