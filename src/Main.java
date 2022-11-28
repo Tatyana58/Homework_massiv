@@ -20,10 +20,19 @@ public class Main {
 
         System.out.println("Задание №2");
         //2. Массив, в котором можно хранить три дробных числа – 1.57, 7.654, 9.986 –  сразу заполнив его значениями.
+        double[] chickenWeight = {1.57, 7.654, 9.986};
+        for (int i=0;i<3;i++) {
+            System.out.println(i+" значение массива, в котором хранится дробное число - "+chickenWeight[i]);
+        }
+        System.out.println(" ");
 
-
-
+        System.out.println("Задание №3");
         //3. Произвольный массив – тип и количество данных определите сами.
         // Самостоятельно выберите способ создания массива: с помощью ключевого слова или сразу заполненный элементами.
+        int[] datyBirth = new int[3];
+        datyBirth[0]=30;
+        datyBirth[1]=1;
+        datyBirth[2]=1978;
+        System.out.print("Дата рождения: "+datyBirth[0]+"."+datyBirth[1]+"."+datyBirth[2]);
+        }
     }
-}
