@@ -55,11 +55,17 @@ public class Main {
         //Пройдите по каждому из трех массивов и распечатайте все элементы всех трех массивов, начиная с первого элемента,
         //через запятую. Запятая между последним элементом одного массива и первым элементом следующего не нужна.
         //см выше.
+        int x=3;
         System.out.print(id[0]+","+id[1]+","+id[2]+"  ");
         //System.out.print(chickenWeight[y] + "," + chickenWeight[y += 1] + "," + chickenWeight[y += 1] + " ");
         int y=0;
         while (y<3) {
-            System.out.print(chickenWeight[y]+",");
+            System.out.print(chickenWeight[y]);
+           if(y<2){
+                System.out.print(",");
+            }else {
+               System.out.print(" ");
+           }
             y++;
         }
             System.out.print(datyBirth[0] + "," + datyBirth[1] + "," + datyBirth[2] + " ");
