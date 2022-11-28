@@ -33,6 +33,18 @@ public class Main {
         datyBirth[0]=30;
         datyBirth[1]=1;
         datyBirth[2]=1978;
-        System.out.print("Дата рождения: "+datyBirth[0]+"."+datyBirth[1]+"."+datyBirth[2]);
+        System.out.println("Дата рождения: "+datyBirth[0]+"."+datyBirth[1]+"."+datyBirth[2]);
+        System.out.println(" ");
+        double[] product= new double[4];
+        product[0]=30.5;
+        product[1]=10.5;
+        product[2]=5.5;
+        product[3]=3.15;
+        double productLong=product[0];
+        double productWidth=product[1];
+        double productHeight=product[2];
+        double productWeight=product[3];
+        System.out.println("Размеры изделия: ");
+        System.out.println("длинна: "+productLong+" ширина: "+productWidth+" высота: "+productHeight+" вес: "+productWeight);
         }
     }
