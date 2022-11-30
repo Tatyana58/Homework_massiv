@@ -1,3 +1,5 @@
+import java.lang.reflect.Array;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Домашняя работа - Массивы");
@@ -11,8 +13,9 @@ public class Main {
         id[1] = 2;
         id[2] = 3;
         for (int i = 0; i < id.length; i++) {
-            System.out.println("Заполнили массив id [" + i + "] = " + id[i]+"\n");
+            System.out.println("Заполнили массив id [" + i + "] = " + id[i]);
         }
+
         System.out.println(" ");
         System.out.println("Задание №2");
         //2. Массив, в котором можно хранить три дробных числа – 1.57, 7.654, 9.986 –  сразу заполнив его значениями.
