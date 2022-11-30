@@ -1,10 +1,7 @@
-import java.lang.reflect.Array;
-
 public class Main {
     public static void main(String[] args) {
         System.out.println("Домашняя работа - Массивы");
         System.out.println("1 задача. Задание №1");
-        System.out.println(" ");
         // 1 задача
         //Объявите три массива:
         //1. Целочисленный массив, заполненный тремя цифрами – 1, 2 и 3 – с помощью ключевого слова new.
@@ -15,15 +12,14 @@ public class Main {
         for (int i = 0; i < id.length; i++) {
             System.out.println("Заполнили массив id [" + i + "] = " + id[i]);
         }
-
-        System.out.println(" ");
+        System.out.println();
         System.out.println("Задание №2");
         //2. Массив, в котором можно хранить три дробных числа – 1.57, 7.654, 9.986 –  сразу заполнив его значениями.
         double[] chickenWeight = {1.57, 7.654, 9.986};
         for (int i = 0; i < chickenWeight.length; i++) {
             System.out.println(i + " значение массива, в котором хранится дробное число - " + chickenWeight[i]);
         }
-        System.out.println(" ");
+        System.out.println();
         System.out.println("Задание №3");
         //3. Произвольный массив – тип и количество данных определите сами.
         // Самостоятельно выберите способ создания массива: с помощью ключевого слова или сразу заполненный элементами.
@@ -37,9 +33,8 @@ public class Main {
         product[1] = 10.5;
         product[2] = 5.5;
         product[3] = 3.15;
-        System.out.println("Размеры изделия: ");
-        System.out.println("длинна: " + product[0] + " ширина: " + product[1] + " высота: " + product[2] + " вес " + product[3]);
-        System.out.println(" ");
+        System.out.println("Размеры изделия:\nдлинна: " + product[0] + " ширина: " + product[1] + " высота: " + product[2] + " вес " + product[3]);
+        System.out.println();
         System.out.println("2 задача. Задание №1");
         //2 задача
         //Пройдите по каждому из трех массивов и распечатайте все элементы всех трех массивов, начиная с первого элемента,
@@ -51,7 +46,7 @@ public class Main {
                 System.out.print(",");
             }
         }
-        System.out.println(" ");
+        System.out.println();
         for (int q = 0; q < chickenWeight.length; q++) {
             System.out.print(chickenWeight[q]);
             if (q < chickenWeight.length - 1) {
@@ -72,7 +67,7 @@ public class Main {
                 System.out.print(",");
             }
         }
-        System.out.println(" ");
+        System.out.println("\n");
         System.out.println("3 задача.");
         //3 задача
         //Теперь ваша задача – распечатать все элементы всех трех массивов, но начинать нужно не с первого элемента массива,
@@ -82,42 +77,28 @@ public class Main {
         //Если во втором задании в консоль у вас вывелся результат
         //1, 2, 3
         //1.57, 7.654, 9.986
-        //*произвольнGые элементы третьего массива*
+        //*произвольные элементы третьего массива*
         //То в третьем задании результат должен быть
         // 3, 2, 1
         //9.986, 7.654, 1.57
         //*произвольные элементы третьего массива в обратном порядке*
-        for (int x = 2; x >= id.length; x--) {
-            System.out.print(id[x]);
-            if (x >= id.length + 1) {
-                System.out.print(",");
-            }
+        for (int o= id.length-1;o>=0;o--) {
+            System.out.print(id[o]+",");
         }
-        System.out.println(" ");
-        for (int x = 2; x >= chickenWeight.length; x--) {
-            System.out.print(chickenWeight[x]);
-            if (x >= chickenWeight.length + 1) {
-                System.out.print(",");
-            }
+        System.out.println("\b");
+        for (int t = chickenWeight.length-1; t >= 0; t--) {
+            System.out.print(chickenWeight[t]+",");
         }
-        System.out.println(" ");
-        for (int x = 2; x >= datyBirth.length; x--) {
-            System.out.print(datyBirth[x]);
-            if (x >= datyBirth.length + 1) {
-                System.out.print(",");
-            }
+        System.out.println("\b");
+        for (int v = datyBirth.length-1; v >= 0; v--) {
+            System.out.print(datyBirth[v]+",");
         }
-        System.out.println(" ");
-        System.out.println("Вариант 1");
-        System.out.println("Вариант 2");
-        for (int x = 3; x >= product.length; x--) {
-            System.out.print(product[x]);
-            if (x >= product.length + 1) {
-                System.out.print(",");
-            }
+        System.out.println("\b");
+        for (int x1 = product.length-1; x1 >= 0; x1--) {
+            System.out.print(product[x1]+",");
         }
-        System.out.println(" ");
-        System.out.println(" ");
+        System.out.println("\b");
+
         System.out.println("4 задача.");
         // 4 задача
         //Пройдитесь по первому целочисленному массиву и все нечетные числа в нем сделайте четными (нужно прибавить 1).
