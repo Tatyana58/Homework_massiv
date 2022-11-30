@@ -39,7 +39,6 @@ public class Main {
         //2 задача
         //Пройдите по каждому из трех массивов и распечатайте все элементы всех трех массивов, начиная с первого элемента,
         //через запятую. Запятая между последним элементом одного массива и первым элементом следующего не нужна.
-        //см выше.
         for (int s = 0; s < id.length; s++){
             System.out.print(id[s]);
             if (s < id.length - 1) {
@@ -83,36 +82,33 @@ public class Main {
         //9.986, 7.654, 1.57
         //*произвольные элементы третьего массива в обратном порядке*
         for (int o= id.length-1;o>=0;o--) {
-            System.out.print(id[o]+",");
+            System.out.print(id[o] + ",");
         }
         System.out.println("\b");
         for (int t = chickenWeight.length-1; t >= 0; t--) {
-            System.out.print(chickenWeight[t]+",");
+            System.out.print(chickenWeight[t] + ",");
         }
         System.out.println("\b");
         for (int v = datyBirth.length-1; v >= 0; v--) {
-            System.out.print(datyBirth[v]+",");
+            System.out.print(datyBirth[v] + ",");
         }
         System.out.println("\b");
         for (int x1 = product.length-1; x1 >= 0; x1--) {
-            System.out.print(product[x1]+",");
+            System.out.print(product[x1] + ",");
         }
-        System.out.println("\b");
-
+        System.out.println("\b\n");
         System.out.println("4 задача.");
         // 4 задача
         //Пройдитесь по первому целочисленному массиву и все нечетные числа в нем сделайте четными (нужно прибавить 1).
         //Важно: код должен работать с любым целочисленным массивом, поэтому для решения задания вам нужно использовать циклы.
         // Распечатайте результат преобразования в консоль.
-        /*for (int i = 0; i < 3; i++) {
-        if (d % 2 != 0) {
-        s++;
-        id[i] = s;
-        } else {            id[i] = s;
-                    s++;
-                }
+        for (int i = 0; i < id.length; i++) {
+            if (id[i] % 2 != 0) {
+                id[i]++;
                 System.out.println("Преобразованный массив id[" + i + "] = " + id[i]);
-
-             */
+            }else{
+            System.out.println("Преобразованный массив id[" + i + "] = " + id[i]);
             }
         }
+    }
+}
